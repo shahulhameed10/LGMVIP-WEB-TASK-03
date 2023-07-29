@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+body{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,13,121,0.9837184873949579) 31%, rgba(0,212,255,1) 100%);}    h1{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.container{
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:5em;
+}
+
+.registrationcontainer{
+    margin-top: 5%;
+    font-weight: 700;
+    justify-self: center;
+    width:auto;
+    height:auto;
+    padding:1em;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:1em;
+   
+    font-size: 20px;
+    background-color:grey;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.registrationcontainer input{
+    padding:0.5em;
+    outline:none;
+    font-weight: 700;
+    color: black;
+}
+.tips{
+color:red;
+}
+.submit{
+    width:60%;
+    padding:0.5em;
+    color:darkgreen;
+    font-weight: 800;
+    font-size: 18px;
+
+}
+.tips{
+    color:black;
+}
+.output{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:0.5em;
+    justify-items: center;
+}
+.addData{
+    text-align: center;
+    width:70%;
+    height:auto;
+    padding:1em;
+    background-color: grey;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.output .addData img{
+    width:150px;
+    height:150px;
+    
+}
+/*Responsiveness*/
+@media all and (max-width:900px){
+    .output{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:0.5em;
+        justify-items: center;
+        
+    }
+
+}
+@media all and (max-width:400px){
+    .container{
+        padding:0.4em;
+    }
+    .registrationcontainer{
+        padding:0.5em;
+    }
+    .output{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:0.5em;
+        justify-items: center;
+    }
+}
+.image-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Styles for form elements, button, and image container */
